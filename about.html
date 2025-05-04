@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./about.css">
+    <title>об αccent</title>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><img src="./src/Back.svg"></a>
+        <p id="navbar-logo"><t style="font-family: 'Roboto';">α</t>ccent</p>
+    </nav>
+
+    <div id="main">
+        <div>
+            <img id="1" src="./src/1.png">
+            <div>
+                <b>Мальцев Матвей</b>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;тимлид</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;дизайнер</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;разработчик</p>
+            </div>
+        </div>
+        
+        <div>
+            <img id="2" src="./src/2.png">
+            <div>
+                <b>Рубцов Семён</b>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;дизайнер</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;разработчик</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if (navigator.onLine) {
+            const img = new Image();
+            img.onload = () => {
+                document.getElementById("1").src = "https://avatars.githubusercontent.com/u/130229185?v=4";
+                document.getElementById("2").src = "https://avatars.githubusercontent.com/u/121186567?v=4";
+            };
+            img.src = "https://avatars.githubusercontent.com/u/130229185?v=4";
+        }
+      </script>
+
+    <p id="bottom-text">По всем вопросам пишите по почте maltmast@gmail.com или прямиков на <a href="https://github.com/maltmast/accent">GitHub</a>.</p>
+</body>
+</html>
