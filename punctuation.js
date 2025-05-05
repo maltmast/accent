@@ -173,7 +173,7 @@ function reload() {
     if (document.querySelectorAll('#punctuation_sentence').length > 0) { document.querySelector('#punctuation_sentence').remove(); }
     punctuation_sentence = document.createElement('p');
     punctuation_sentence.setAttribute('id', 'punctuation_sentence');
-    if (GetCookie("punctuation_random") === null) { punctuation_sentence.textContent = GetCookie("punctuation_sentence") + "/" + sentences.length; }
+    if (GetCookie("punctuation_random") === null) { punctuation_sentence.textContent = (GetCookie("punctuation_sentence") || "0") + "/" + sentences.length; }
     document.querySelector("nav").appendChild(punctuation_sentence);
 
     if (GetCookie("punctuation_random") === null) {
