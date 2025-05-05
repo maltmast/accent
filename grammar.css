@@ -10,45 +10,45 @@
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+}
 
-    & div {
-        width: 80%;
-        max-width: 50rem;
-        background-color: #D9D9D9;
-        padding: 1.5rem;
-        border-radius: 1.5rem;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-family: 'Gabriela';
-        font-size: 1.5rem;
-        color: #264653;
-        transition: background-color 0.25s ease;
-        outline: none;
-        -webkit-tap-highlight-color: transparent;
-        
-        &:not([disabled]) {
-            cursor: pointer;
-        }
+#choices div {
+    width: 80%;
+    max-width: 50rem;
+    background-color: #D9D9D9;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gabriela';
+    font-size: 1.5rem;
+    color: #264653;
+    transition: background-color 0.25s ease;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
-        &:hover {
-            background-color: #d9d9d9c0;
-            transition: background-color 0.5s;
-        }
+#choices div:not([disabled]) {
+    cursor: pointer;
+}
 
-        &:active {
-            background-color: #e0e0e0;
-            transition: background-color 0.5s;
-        }
+#choices div:hover {
+    background-color: #d9d9d9c0;
+    transition: background-color 0.5s;
+}
 
-        &.right {
-            background-color: #89D88B;
-            color: #000000d0;
-        }
+#choices div:active {
+    background-color: #e0e0e0;
+    transition: background-color 0.5s;
+}
 
-        &.wrong {
-            background-color: #D88787;
-            color: #000000d0;
-        }
-    }
+#choices div.right {
+    background-color: #89D88B;
+    color: #000000d0;
+}
+
+#choices div.wrong {
+    background-color: #D88787;
+    color: #000000d0;
 }

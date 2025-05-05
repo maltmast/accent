@@ -10,29 +10,27 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-
-    & div {
-        display: flex;
-        align-content: center;
-        gap: 2.5rem;
-
-        & img {
-            width: 50%;
-            aspect-ratio: 1 / 1;
-            border-radius: 100%;
-            box-shadow: 0 0 5rem #ffffff;
-        }
-
-        & div {
-            font-family: 'Gabriela';
-            font-size: 1.1rem;
-            color: #264653;
-            display: block;
-        }
-
-    }
 }
 
+#main div {
+    display: flex;
+    align-content: center;
+    gap: 2.5rem;
+}
+
+#main div img {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    box-shadow: 0 0 5rem #ffffff;
+}
+
+#main div div {
+    font-family: 'Gabriela';
+    font-size: 1.1rem;
+    color: #264653;
+    display: block;
+}
 
 #bottom-text {
     position: absolute;
